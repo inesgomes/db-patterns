@@ -2,11 +2,15 @@
 
 ![License](https://img.shields.io/static/v1?label=license&message=CC-BY-NC-ND-4.0&color=green)
 
+All experiments were conducted using a machine equipped with a Testa T4 GPU, ensuring sufficient computational power for training and inference phases.
+
 ## Create Virtual Environment
 
 ```ssh
 conda env create -f environment.yml
 ```
+
+This environment assumes working with CUDA12.
 
 ## Prepare env file
 
@@ -53,7 +57,7 @@ Paper: [GASTeN: Generative Adversarial Stress Test Networks](https://link.spring
 5. train GASTeN: `python -m src --config experiments/original/mnist_7v1.yml`
 6. go to wandb and check your experiments
 
-### Step 2 & 3: Finding Patterns in Ambiguity & Prototype Selection
+### Step 2, 3 and 4: Finding Patterns in Ambiguity & Prototype Selection and Visualization
 
 This module includes experiments to deep clustering and find prototypes.
 
@@ -72,6 +76,3 @@ It is possible to run the experiments sequentially:
 1. generate synthetic images and embeddings: `python -m src.clustering.generate_embeddings --config experiments/patterns/mnist_7v1.yml`
 2. clustering hyperparameter optimization: `python -m src.clustering.optimize --config experiments/patterns/mnist_7v1.yml`
 3. prototype selection: `python -m src.clustering.prototypes --config experiments/patterns/mnist_7v1.yml`
-
-
-
