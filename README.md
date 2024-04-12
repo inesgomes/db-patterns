@@ -2,6 +2,8 @@
 
 ![License](https://img.shields.io/static/v1?label=license&message=CC-BY-NC-ND-4.0&color=green)
 
+Accepted paper @ ReGenAI workshop - CVPR
+
 All experiments were conducted using a machine equipped with a Testa T4 GPU, ensuring sufficient computational power for training and inference phases.
 
 ## Create Virtual Environment
