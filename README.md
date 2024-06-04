@@ -4,7 +4,7 @@
 
 Accepted paper @ ReGenAI workshop - CVPR
 
-All experiments were conducted using a machine equipped with a Testa T4 GPU, ensuring sufficient computational power for training and inference phases.
+All experiments were conducted using a machine equipped with a Tesla T4 GPU, ensuring sufficient computational power for training and inference phases.
 
 ## Create Virtual Environment
 
